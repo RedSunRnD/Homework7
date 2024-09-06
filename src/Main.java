@@ -26,13 +26,13 @@ public class Main {
 
         //Задача №3
         int population = 12_000_000;
-        int birthRate = 9; // на 1000 человек
+        int birthRate = 17; // на 1000 человек
         int mortalityRate = 8; // на 1000 человек
-        int b = 0;
-        for (; b < 10; b++){
+        int b = 1;
+        for (; b <= 10; b++){
             population = population + population * birthRate/1000 - population * mortalityRate/1000;
+            System.out.println("Год " + b + " численность населения составляет " + population + ".");
         }
-        System.out.println("Год " + b + " численность населения составляет " + population + ".");
         System.out.println();
 
         //Задача №4
